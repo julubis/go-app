@@ -14,7 +14,7 @@ func Version(context echo.Context) error {
 func main() {
 	e := echo.New()
 	e.GET("/", Version)
-	address := fmt.Sprintf("%s:%s", "localhost", "3000")
+	address := fmt.Sprintf("%s:%s", "localhost", "8080")
 	fmt.Println(address)
 	e.Start(address)
 
